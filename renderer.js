@@ -8,16 +8,21 @@ $(function() {
   	return;
   }
   
-  var taal = raaga.taal,
+  var name = raaga.name,
+      taal = raaga.taal,
       gat = raaga.gat || [],
       startBeat = raaga.startBeat,
-      maxBeatsPerLine = 8;
+      maxBeatsPerLine = 8,
+      line,
+      composition = $('.composition'),
+      html = '';
+  
+  $('.raaga-name').html(name);
   
   if (taal === 'teentaal') {
   
-    html = '';
+    
   	gat.forEach(function(beatNotes, index){
-  		console.log(index);
   		var notesHtml = '';
   		beatNotes.forEach(function(beatNoteDef){
   			var beatNote = '',
@@ -37,10 +42,17 @@ $(function() {
   		});
   			
   		html += TEMPLATE.replace('{notes}', notesHtml);	
+  		
+  		if ( (index+1) % maxBeatsPerLine === 0) {
+  			line = $('<div class="line"></div>');
+  			composition.append(line);
+  			line.append(html);
+  			html = '';
+  		}
   	
   	});
   	
-  	$('.composition').html(html);
+  	//$('.composition').html(html);
   	
   }
   
