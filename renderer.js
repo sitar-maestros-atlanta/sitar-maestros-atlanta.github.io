@@ -26,7 +26,7 @@ $(function() {
   	
     var marginDiv = div = $('<div class="margin-col"></div>'),
         detailsDiv = $('<div class="details-col">'),
-        ct = $('<div class="column-layout"></div>');
+        ct = $('<div class="column-layout item"></div>');
 
 	ct.append(marginDiv).append(detailsDiv);
 	composition.append(ct);
