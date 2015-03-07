@@ -8,9 +8,15 @@
 		<script>
 			var RAAGA_DEF = {
 			    name: 'Bhairavi',
+			    arohan: ['mS', 'mr', 'mg', 'mM', 'mP', 'md', 'mn', 'uS'],
+			    avarohan: ["uS", "mn", "md", "mP", "mM", "mg", "mr", "mS"],
+			    pakad: ['ln', 'mS', 'mg', 'mM', 'mP', 'md', 'mP', 'mg', 'mP', 'md', 'mM', 'mr', 'mg', 'mr', 'mS'],
 				taal: 'teentaal',
-				gat: [['ln', ''], ['mS', 'mS'], ['mg', ''], ['mM', 'mM'], ['mP', '-'], ['c', '-'], ['md', '-'], ['mP', 'mP'], 
-				      ['mg', '-'], ['mM', 'mM'], ['md', '-'], ['mP', 'mP'], ['mg', '-'], ['mM', 'mM'], ['mr', '-'], ['mS', 'mr']]
+				gat: [['ln', ''], ['mS', 'mS'], ['mg', ''], ['mM', 'mM'], ['mP', ''], ['c', ''], ['md', ''], ['mP', 'mP'], 
+				      ['mg', ''], ['mM', 'mM'], ['md', ''], ['mP', 'mP'], ['mg', ''], ['mM', 'mM'], ['mr', ''], ['mS', 'mr']],
+				      
+				manjha: [['c', ''], ['ln', 'mS'], ['', 'mr'], ['mS', ''], ['ld', '-'], ['ld', '-'], ['lM', ''], ['lP', ''], 
+				        ['c', ''], ['lg', 'lM'], ['', 'ld'], ['ln', ''], ['mS', ''], ['mS', ''], ['mr', ''], ['mS', '']]      
 			};
 		</script>
 
@@ -22,13 +28,18 @@
 		<div class="raaga">
 		
 		
-			<div class="margin-col"></div>	
-			<div class="details-col">
-				<h2 class="raaga-name"></h2>
-				<div class="composition">
 			
+				<h2 class="raaga-name"></h2>
+				
+				<div class="arohan-container metadata column-layout"></div>
+				<div class="avarohan-container metadata column-layout"></div>
+				<div class="pakad-container metadata column-layout"></div>
+				
+				<h3 class="composition-header">Composition</h3>
+				<div class="composition">
+				
 				</div>
-			</div>		
+				
 		
 			
 		</div>

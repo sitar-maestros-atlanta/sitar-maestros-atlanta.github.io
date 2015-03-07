@@ -28,25 +28,53 @@
   flex-wrap: @wrap;
 }
 
+
+
 .raaga {
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
-	
+	margin: auto 10rem;
+	letter-spacing: 5px;
 	
 	.flex-display;
+	.flex-direction(column);
 	
-	.margin-col {
-	.flex(1 0 100px);
-	}
+	.column-layout {
+		.details-col {
+		  font-family: courier 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+		  font-weight: normal;
+		}	
 	
-	.details-col {
-	.flex(1 0 auto);
+		.flex-display;
+		.margin-col {
+		  .flex(1 0 150px);
+		  max-width: 150px;
+		}
+	
+		.details-col {
+		  .flex(1 0 auto);
+		}
 	}
+
+    .metadata {
+       margin: 20px 0px;
+      .note {
+       letter-spacing: 20px;
+       }
+       
+       .details-col {
+       	margin-left: 10px;
+       }
+    }
 	
 	.raaga-name {
       letter-spacing: 5px;
       font-size: 1.9rem;
       text-transform: uppercase;
+      
+      &::first-letter {
+        font-size: 2.8rem;
+      }
     }
     
     .note {
@@ -62,39 +90,44 @@
           font-size: 2rem;
 	  }
 	}
-}
-
-.composition {
-
-	.line {
-	  .flex-display;		
+	
+	
+	.composition-header {
+	  font-size: 1.5rem;
 	}
-	
-	.beat {
-	  .flex(0 0 60px);	
-      width: 60px;
-      height: 55px;
-      text-align: center;
-      margin: 0px 10px;
-	}
-	
-
-	
-	.marker {
-		height: 10px;
-		position: relative;
-		
-		&:after {
-			position:absolute;
-			top: -12px;
-			left: 0px;
-			height: 20px;
-			border-radius: 50%;
-			width: 60px;
-			border-bottom: 1px solid;
-			content: '';
-			border-bottom-width: 2px;
+	.composition {
+        margin: 20px 0px;
+		.line {
+		  .flex-display;		
 		}
-	}
+	
+		.beat {
+		  .flex(0 0 60px);	
+		  width: 60px;
+		  height: 55px;
+		  text-align: center;
+		  margin: 0px 10px;
+		}
+	
 
+	
+		.marker {
+			height: 10px;
+			position: relative;
+		
+			&:after {
+				position:absolute;
+				top: -12px;
+				left: 0px;
+				height: 20px;
+				border-radius: 50%;
+				width: 60px;
+				border-bottom: 1px solid;
+				content: '';
+				border-bottom-width: 2px;
+			}
+		}
+
+	}
 }
+
