@@ -82,12 +82,19 @@
 	  position: relative;
 	  font-size: 1.6rem;
 	  
-	  &.lower:after {
-		  content:'\0323';
-		  position: absolute;
-		  font-size: 1rem;
-		  left: 8px;
+	  &.lower:before, &.upper:before {
+          content: '\00B7';
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          text-align: center;
           font-size: 2rem;
+	  }
+	  &.lower:before {
+          margin-top: 15px;
+	  }
+	  &.upper:before {
+  	    margin-top: -15px;
 	  }
 	}
 	
@@ -117,7 +124,7 @@
 		
 			&:after {
 				position:absolute;
-				top: -12px;
+				top: -10px;
 				left: 0px;
 				height: 20px;
 				border-radius: 50%;
