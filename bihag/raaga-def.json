@@ -5,41 +5,104 @@
     "pakad": [],
     "taal": "teentaal",
     "gat": [
-        ["mS", ""],
-        ["mM", "mM"],
-        ["mG", ""],
-        ["mP", ""],
+        ["mSd", ""],
+        ["mMd", "mMr"],
+        ["mGd", ""],
+        ["mPd", ""],
         ["c", ""],
-        ["mm", ""],
-        ["mP", "mG"],
-        ["mM", ""],
-        ["mG", ""],
+        ["mmd", ""],
+        ["mPd", "mGr"],
+        ["mMd", ""],
+        ["mGd", ""],
         ["c", ""],
-        ["mP", ""],
-        ["mG", "mM"],
-        ["mG", ""],
-        ["mR", "mR"],
-        ["mS", "mS"],
-        ["lN", "lN"]
+        ["mPd", ""],
+        ["mGd", "mMr"],
+        ["mGd", ""],
+        ["mRd", "mRr"],
+        ["mSd", "mSr"],
+        ["lNd", "lNr"]
     ],
 
     "manjha": [
-        ["mS", ""],
-        ["lN", "lN"],
-        ["lP", "lP"],
-        ["lN", "lN"],
-        ["mS", ""],
-        ["mM", "mM"],
-        ["mG", ""],
+        ["mSd", ""],
+        ["lNd", "lNr"],
+        ["lPd", "lPr"],
+        ["lNd", "lNr"],
+        ["mSd", ""],
+        ["mMd", "mMr"],
+        ["mGd", ""],
         ["c", ""],
-        ["mP", ""],
-        ["mm", "mm"],
-        ["mG", "mG"],
-        ["mM", "mM"],
-        ["mG", ""],
-        ["mR", "mR"],
-        ["mS", "mS"],
-        ["lN", "lN"]
-    ]
+        ["mPd", ""],
+        ["mmd", "mmr"],
+        ["mGd", "mGr"],
+        ["mMd", "mMr"],
+        ["mGd", ""],
+        ["mRd", "mRr"],
+        ["mSd", "mSr"],
+        ["lNd", "lNr"]
+    ],
+
+    "anthara": [
+        ["mGd", ""],
+        ["lMd", "lMr"],
+        ["lPd", ""],
+        ["lNd", "lNr"],
+        ["uSd", ""],
+        ["mNd", "mNr"],
+        ["uSd", ""],
+        ["c", ""],
+        ["mPd", ""],
+        ["mNd", "mNr"],
+        ["uSd", "uSr"],
+        ["uGd", "uGr"],
+        ["uMd", ""],
+        ["uGd", "uGr"],
+        ["uRd", "uRr"],
+        ["uSd", "uSr"],
+
+
+        ["uSd", ""],
+        ["mNd", "mNr"],
+        ["mPd", "mPr"],
+        ["mmd", "mmr"],
+        ["mGd", ""],
+        ["mMd", "mMr"],
+        ["mGd", ""],
+        ["c", ""],
+        ["mGd", "mMr"],
+        ["mPd", "mNr"],
+        ["uSd", "mNr"],
+        ["mDd", "mPr"],
+        ["mmd", "mPr"],
+        ["mGd", "mMr"],
+        ["mGd", "mRr"],
+        ["mSd", "lNr"]
+    ],
+
+    "taan": [{
+        "notes": [
+            ["lPd", "lNr"],
+            ["mSd", ""],
+            ["mGd", "mMr"],
+            ["mGd", ""],
+            ["mPd", "mmr"],
+            ["mPd", ""],
+            ["mGd", "mMr"],
+            ["mGd", ""]
+        ]
+
+    }, {
+        "notes": [
+            ["mSd", "mMr"],
+            ["mGd", "mPr"],
+            ["mmd", "mPr"],
+            ["mGd", "mMr"],
+            ["mGd", ""],
+            ["mGd", "mMr"],
+            ["mGd", "mRr"],
+            ["mSd", "lNr"]
+        ]
+
+    }]
 
 }

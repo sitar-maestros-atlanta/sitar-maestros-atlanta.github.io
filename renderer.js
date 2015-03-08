@@ -17,7 +17,7 @@ function clearPage() {
 
 function showRaaga(raagaDef) {
 
-    var TEMPLATE = '<div class="beat"><div class="notes-ct">{notes}</div><div class="marker"></div></div>',
+    var TEMPLATE = '<div class="beat"><div class="notes-ct">{notes}</div><div class="stroke-container">{strokes}</div><div class="marker"></div></div>',
         NOTES_TEMPLATE = '<span class="note {octave}">{note}</span>';
 
 
@@ -39,7 +39,7 @@ function showRaaga(raagaDef) {
 
     }
 
-    function writeCompositionPart(compositionDiv, notes, title) {
+    function writeCompositionPart(composition, notes, title) {
         notes = notes || [];
 
         var marginDiv = div = $('<div class="margin-col"></div>'),
@@ -49,12 +49,18 @@ function showRaaga(raagaDef) {
         ct.append(marginDiv).append(detailsDiv);
         composition.append(ct);
         notes.forEach(function (beatNotes, index) {
-            var notesHtml = '';
+            var notesHtml = '',
+                strokeHtml = '';
             beatNotes.forEach(function (beatNoteDef) {
                 notesHtml += getHtmlForNotesDef(beatNoteDef);
+                strokeHtml += '<span class="stroke">';
+                if (beatNoteDef.length >= 3 ) {
+                    strokeHtml += beatNoteDef.substring(2) === 'd' ? '&#8403;' : '&#8213;';
+                }
+                strokeHtml += '</span>';
             });
 
-            html += TEMPLATE.replace('{notes}', notesHtml);
+            html += TEMPLATE.replace('{notes}', notesHtml).replace('{strokes}', strokeHtml);
 
             if ((index + 1) % maxBeatsPerLine === 0) {
                 line = $('<div class="line"></div>');
@@ -110,6 +116,11 @@ function showRaaga(raagaDef) {
         writeCompositionPart(composition, raaga.gat, 'Gat');
         writeCompositionPart(composition, raaga.manjha, 'Manjha');
         writeCompositionPart(composition, raaga.anthara, 'Anthara');
+
+        var taans = raaga.taan || [];
+        taans.forEach(function(taan, i) {
+            writeCompositionPart(composition, taan.notes, 'Taan ' + (i+1));
+        });
 
     }
 

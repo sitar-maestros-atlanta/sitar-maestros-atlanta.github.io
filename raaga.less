@@ -34,7 +34,7 @@
 body {
   max-width: 1024px;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .header {
@@ -106,17 +106,26 @@ body {
       border-radius: 4px;
       content: '';
       position: absolute;
+      left: 7px;
     }
     &.lower:before {
-      /*margin-top: 18px;*/
       bottom: -7px;
-      left: 5px;
     }
     &.upper:before {
-      /*margin-top: -18px;*/
       top: -7px;
-      left: 5px;
     }
+  }
+
+  .stroke-container {
+    text-align: center;
+    height: 10px;
+    margin-top: -2px;
+    font-weight:bold;
+    .stroke {
+      display: inline-block;
+      width: 50%;
+    }
+
   }
 
   .composition-header {
@@ -126,6 +135,7 @@ body {
     margin: 20px 0px;
     .line {
       .flex-display;
+      margin-bottom: 20px;
     }
 
     .beat {
