@@ -79,30 +79,125 @@
         ["mSd", "lNr"]
     ],
 
-    "taan": [{
-        "notes": [
-            ["lPd", "lNr"],
-            ["mSd", ""],
-            ["mGd", "mMr"],
-            ["mGd", ""],
-            ["mPd", "mmr"],
-            ["mPd", ""],
-            ["mGd", "mMr"],
-            ["mGd", ""]
-        ]
+    "taan": [
+        {
+            "notes": [
+                ["lPd", "lNr"],
+                ["mSd", ""],
+                ["mGd", "mMr"],
+                ["mGd", ""],
+                ["mPd", "mmr"],
+                ["mPd", ""],
+                ["mGd", "mMr"],
+                ["mGd", ""]
+            ]
 
-    }, {
-        "notes": [
-            ["mSd", "mMr"],
-            ["mGd", "mPr"],
-            ["mmd", "mPr"],
-            ["mGd", "mMr"],
-            ["mGd", ""],
-            ["mGd", "mMr"],
-            ["mGd", "mRr"],
-            ["mSd", "lNr"]
-        ]
+        },
+        {
+            "notes": [
+                ["mSd", "mMr"],
+                ["mGd", "mPr"],
+                ["mmd", "mPr"],
+                ["mGd", "mMr"],
+                ["mGd", ""],
+                ["mGd", "mMr"],
+                ["mGd", "mRr"],
+                ["mSd", "lNr"]
+            ]
 
-    }]
+        },
+        {
+            "notes": [
+                ["mSd", "mSr"],
+                ["mSd", "mMd"],
+                ["mMr", "mMd"],
+                ["mGd", "mGr"],
+                ["mGd", "mPd"],
+                ["mPr", "mPd"],
+                ["mmd", "mPr"],
+                ["mGd", "mMr"],
+
+
+                ["mGd", "mGr"],
+                ["mGd", "mMd"],
+                ["mMr", "mMd"],
+                ["mPd", "mPr"],
+                ["mPd", "mNd"],
+                ["mNr", "mNd"],
+                ["mPd", "mPr"],
+                ["mNd", "uSr"],
+
+                ["mPd", "mPr"],
+                ["mPd", "mNd"],
+                ["mNr", "mNd"],
+                ["uSd", "uSr"],
+                ["uSd", "uGd"],
+                ["uGr", "uGd"],
+                ["uMd", "uGr"],
+                ["uRd", "uSr"],
+
+                ["uSd", "uSr"],
+                ["uSd", "mNd"],
+                ["mNr", "mNd"],
+                ["mPd", "mPr"],
+                ["mPd", "mmd"],
+                ["mmr", "mmd"],
+                ["mGd", "mMr"],
+                ["mGd", "uRr"]
+            ],
+
+            "tihai": {
+                "repeat": 3,
+                "notes": [
+                    ["mSd", "mMr"],
+                    ["mGd", "mPr"],
+                    ["mmd", "mPr"],
+                    ["mGd", "mMr"],
+                    ["mGd", ""],
+                    ["c", ""]
+                ]
+            }
+
+
+        }
+    ],
+
+    "jhala": {
+        "notes": [
+            ["mSd"],
+            ["c"],
+            ["c"],
+            ["c"],
+
+            ["lNd"],
+            ["c"],
+            ["c"],
+            ["c"],
+
+            ["lPd"],
+            ["c"],
+            ["c"],
+            ["c"],
+
+            ["lNd"],
+            ["c"],
+            ["c"],
+            ["c"]
+
+        ],
+
+        "tihai": {
+            "repeat": 3,
+            "notes": [
+                ["mSd", "mMr"],
+                ["mGd", "mPr"],
+                ["mmd", "mPr"],
+                ["mGd", "mMr"],
+                ["mGd", ""],
+                ["c", ""]
+            ]
+        }
+
+    }
 
 }

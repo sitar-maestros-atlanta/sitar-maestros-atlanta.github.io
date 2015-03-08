@@ -39,7 +39,7 @@ function showRaaga(raagaDef) {
 
     }
 
-    function writeCompositionPart(composition, notes, title) {
+    function writeCompositionPart(parent, notes, title, maxBeatsPerLine) {
         notes = notes || [];
 
         var marginDiv = div = $('<div class="margin-col"></div>'),
@@ -47,7 +47,7 @@ function showRaaga(raagaDef) {
             ct = $('<div class="column-layout item"></div>');
 
         ct.append(marginDiv).append(detailsDiv);
-        composition.append(ct);
+        parent.append(ct);
         notes.forEach(function (beatNotes, index) {
             var notesHtml = '',
                 strokeHtml = '';
@@ -62,7 +62,7 @@ function showRaaga(raagaDef) {
 
             html += TEMPLATE.replace('{notes}', notesHtml).replace('{strokes}', strokeHtml);
 
-            if ((index + 1) % maxBeatsPerLine === 0) {
+            if (maxBeatsPerLine && (index + 1) % maxBeatsPerLine === 0) {
                 line = $('<div class="line"></div>');
                 detailsDiv.append(line);
                 line.append(html);
@@ -70,7 +70,16 @@ function showRaaga(raagaDef) {
             }
 
         });
+
+        if (! maxBeatsPerLine) {
+            line = $('<div class="line"></div>');
+            detailsDiv.append(line);
+            line.append(html);
+            html = '';
+        }
+
         marginDiv.html(title);
+        return ct;
     }
 
     function setMetaDataNotes(notes, container, header) {
@@ -84,6 +93,18 @@ function showRaaga(raagaDef) {
         container.append(marginDiv).append(detailsDiv);
         detailsDiv.html(metaDataHtml);
         marginDiv.html(header);
+    }
+
+    function writeTihai(tihai, parentElement) {
+
+        if (tihai) {
+            var tihaiElement = writeCompositionPart(parentElement, tihai.notes, '');
+
+            if (tihai.repeat > 1) {
+                tihaiElement.find('.line').append('<div class="tihai-repeat"><span>]</span> x ' + tihai.repeat + ' Times</div>')
+            }
+        }
+
     }
 
     var raaga = raagaDef;
@@ -113,15 +134,21 @@ function showRaaga(raagaDef) {
 
     if (taal === 'teentaal') {
 
-        writeCompositionPart(composition, raaga.gat, 'Gat');
-        writeCompositionPart(composition, raaga.manjha, 'Manjha');
-        writeCompositionPart(composition, raaga.anthara, 'Anthara');
+        writeCompositionPart(composition, raaga.gat, 'Gat', maxBeatsPerLine);
+        writeCompositionPart(composition, raaga.manjha, 'Manjha', maxBeatsPerLine);
+        writeCompositionPart(composition, raaga.anthara, 'Anthara', maxBeatsPerLine);
 
         var taans = raaga.taan || [];
         taans.forEach(function(taan, i) {
-            writeCompositionPart(composition, taan.notes, 'Taan ' + (i+1));
+            writeCompositionPart(composition, taan.notes, 'Taan ' + (i+1), maxBeatsPerLine);
+
+            writeTihai(taan.tihai, composition);
         });
 
+        if (raaga.jhala) {
+            writeCompositionPart(composition, raaga.jhala.notes, 'Jhala', maxBeatsPerLine);
+            writeTihai(raaga.jhala.tihai, composition);
+        }
     }
 
 }
