@@ -111,6 +111,7 @@ function showRaaga(raagaDef) {
   
   	writeCompositionPart(composition, raaga.gat , 'Gat');
     writeCompositionPart(composition,  raaga.manjha , 'Manjha');
+    writeCompositionPart(composition,  raaga.anthara , 'Anthara');
   
   }
   
