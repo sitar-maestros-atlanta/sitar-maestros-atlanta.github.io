@@ -1,11 +1,45 @@
 {
     "name": "Bihag",
-	"arohan": [],
-	"avarohan": [],
-	"pakad": [],
-	"taal": "teentaal",
-	"gat": [],
-		  
-	"manjha": []
+    "arohan": ["lN", "mS", "mG", "mM", "mP", "mN", "uS"],
+    "avarohan": ["uS", "mN", "mD", "mP", "mm", "mP", "mG", "mM", "mG", "mR", "mS"],
+    "pakad": [],
+    "taal": "teentaal",
+    "gat": [
+        ["mS", ""],
+        ["mM", "mM"],
+        ["mG", ""],
+        ["mP", ""],
+        ["c", ""],
+        ["mm", ""],
+        ["mP", "mG"],
+        ["mM", ""],
+        ["mG", ""],
+        ["c", ""],
+        ["mP", ""],
+        ["mG", "mM"],
+        ["mG", ""],
+        ["mR", "mR"],
+        ["mS", "mS"],
+        ["lN", "lN"]
+    ],
+
+    "manjha": [
+        ["mS", ""],
+        ["lN", "lN"],
+        ["lP", "lP"],
+        ["lN", "lN"],
+        ["mS", ""],
+        ["mS", "mM"],
+        ["mG", ""],
+        ["c", ""],
+        ["mP", ""],
+        ["mm", "mm"],
+        ["mG", "mG"],
+        ["mM", "mM"],
+        ["mG", ""],
+        ["mR", "mR"],
+        ["mS", "mS"],
+        ["lN", "lN"]
+    ]
 
 }
