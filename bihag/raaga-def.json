@@ -108,6 +108,47 @@
         },
         {
             "notes": [
+                ["mSd", "lNr"],
+                ["lPd", "lNr"],
+                ["", "mSd"],
+                ["mMr", "mGd"],
+                ["", "mPd"],
+                ["mmr", "mPd"],
+                ["", "mGd"],
+                ["mMr", "mGd"]
+            ]
+
+        },
+        {
+            "notes": [
+                ["mSd", ""],
+                ["mMr", "mGd"],
+                ["", "mPr"],
+                ["mmd", ""],
+                ["mPr", "mGd"],
+                ["", "mMr"],
+                ["mGd", "mRr"],
+                ["mSd", "lNr"]
+            ]
+
+        },
+
+        {
+            "notes": [
+                ["mGd", "mmr"],
+                ["mPd", "mNr"],
+                ["uSd", ""],
+                ["mDd", "mPr"],
+                ["mmd", "mPr"],
+                ["mGd", "mMr"],
+                ["mGd", "mRr"],
+                ["mSd", "lNr"]
+            ]
+
+        },
+
+        {
+            "notes": [
                 ["mSd", "mSr"],
                 ["mSd", "mMd"],
                 ["mMr", "mMd"],
@@ -158,6 +199,59 @@
                 ]
             }
 
+
+        },
+
+        {
+            "notes": [
+                ["lPd", ""],
+                ["lNr", "mSd"],
+                ["", "mMr"],
+                ["mGd", ""],
+                ["mPd", ""],
+                ["mmr", "mGd"],
+                ["", "mMr"],
+                ["mGd", ""],
+
+                ["mGd", ""],
+                ["mMr", "mPd"],
+                ["", "mNr"],
+                ["uSd", ""],
+                ["mmd", ""],
+                ["mPr", "mGd"],
+                ["", "mMr"],
+                ["mGd", ""],
+
+                ["mPd", ""],
+                ["mNr", "uSd"],
+                ["", "uMr"],
+                ["uGd", ""],
+                ["mNd", ""],
+                ["mPr", "mGd"],
+                ["", "mMr"],
+                ["mGd", ""],
+
+                ["mGd", ""],
+                ["mRr", "mSd"],
+                ["", "lNr"],
+                ["lSd", ""],
+                ["lPd", ""],
+                ["lNr", "mSd"],
+                ["", "mMr"],
+                ["mGd", ""]
+
+
+
+            ],
+
+            "tihai": {
+                "repeat": 3,
+                "notes": [
+                    ["mSd", "lNr"],
+                    ["mSd", "mMr"],
+                    ["mGd", ""]
+                ]
+            }
 
         }
     ],
